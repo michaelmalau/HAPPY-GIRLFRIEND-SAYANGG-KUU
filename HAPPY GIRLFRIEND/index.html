@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Girlfriend Day - Angelina Gresia Lebuan 💕</title>
+  <style>
+    /* RESET & CORE STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffd1dc 0%, #ffe6eb 50%, #fff0f5 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow-x: hidden;
+      position: relative;
+      color: #5a3d46;
+    }
+
+    /* CONTAINER PRINCIPAL */
+    .card-container {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 3px solid #ffb6c1;
+      border-radius: 25px;
+      padding: 30px 25px;
+      max-width: 650px;
+      width: 100%;
+      box-shadow: 0 15px 35px rgba(255, 182, 193, 0.5);
+      text-align: center;
+      position: relative;
+      z-index: 10;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* JUDUL */
+    h1 {
+      font-size: 1.8rem;
+      color: #ff477e;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.6);
+    }
+
+    /* GALERI 3 FOTO */
+    .photo-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .photo-frame {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #ff758f;
+      box-shadow: 0 8px 15px rgba(255, 117, 143, 0.4);
+      overflow: hidden;
+      position: relative;
+      background-color: #fff;
+      transition: transform 0.3s ease;
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    .photo-frame:nth-child(2) {
+      width: 160px;
+      height: 160px;
+      border-color: #ff477e;
+      animation-delay: 0.5s;
+    }
+
+    .photo-frame:nth-child(3) {
+      animation-delay: 1s;
+    }
+
+    .photo-frame:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* EMBED YOUTUBE LAGU */
+    .music-box {
+      margin: 20px 0;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border: 2px solid #ffb6c1;
+    }
+
+    .music-box iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+    }
+
+    /* SURAT / PESAN */
+    .message-box {
+      background: #fff;
+      border-radius: 18px;
+      padding: 20px;
+      border: 2px dashed #ff8fa3;
+      text-align: justify;
+      line-height: 1.7;
+      font-size: 0.95rem;
+      color: #4a3e3d;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-bottom: 20px;
+      box-shadow: inset 0 0 10px rgba(255, 182, 193, 0.2);
+    }
+
+    /* SCROLLBAR CANTIK */
+    .message-box::-webkit-scrollbar {
+      width: 6px;
+    }
+    .message-box::-webkit-scrollbar-thumb {
+      background-color: #ff758f;
+      border-radius: 10px;
+    }
+
+    /* BADGE NAMA */
+    .name-badge {
+      display: inline-block;
+      background: linear-gradient(45deg, #ff758f, #ff477e);
+      color: white;
+      font-weight: bold;
+      padding: 8px 18px;
+      border-radius: 20px;
+      margin-top: 10px;
+      box-shadow: 0 4px 10px rgba(255, 71, 126, 0.3);
+    }
+
+    /* FLOATING EMOJI */
+    .floating-emoji {
+      position: absolute;
+      top: -50px;
+      font-size: 24px;
+      user-select: none;
+      pointer-events: none;
+      z-index: 1;
+      animation: fall linear infinite;
+    }
+
+    /* ANIMASI */
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(105vh) rotate(360deg);
+        opacity: 0.2;
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* RESPONSIVE UNTUK HP */
+    @media (max-width: 480px) {
+      h1 { font-size: 1.4rem; }
+      .photo-frame { width: 100px; height: 100px; }
+      .photo-frame:nth-child(2) { width: 120px; height: 120px; }
+      .message-box { font-size: 0.88rem; max-height: 250px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CARD UTAMA -->
+  <div class="card-container">
+    <h1>✨ Happy Girlfriend Day Sayang! ✨</h1>
+
+    <!-- GALERI 3 FOTO (Ganti link src di bawah dengan nama file fotomu) -->
+    <div class="photo-gallery">
+      <!-- Foto 1 (Kiri) -->
+      <div class="photo-frame">
+        <img src="angelina.jpg" alt="Foto 1 Angelina">
+      </div>
+
+      <!-- Foto 2 (Tengah/Utama) -->
+      <div class="photo-frame">
+        <img src="sayangg kuu.jpg" alt="Foto 2 Angelina">
+      </div>
+
+      <!-- Foto 3 (Kanan) -->
+      <div class="photo-frame">
+        <img src="WhatsApp Image 2026-07-31 at 23.39.31.jpeg" alt="Foto 3 Angelina">
+      </div>
+    </div>
+
+    <!-- PEMUTAR LAGU YOUTUBE -->
+    <div class="music-box">
+      <iframe 
+        src="https://www.youtube.com/embed/sIcXQ3EbfDo?autoplay=1&loop=1" 
+        title="Lagu Spesial Untukmu"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- PESAN SPESIAL -->
+    <div class="message-box">
+      <p>
+        haii sayangg kuu , cieee yangg harii harii nyaa girllfriendd ciee ciee cieee , sayangg selamaatt harii kasihh sayangg wanitaaa terhebatt akuu , kesayangabb akuu , cintaa kuu , cantikk kuu , bidadarii kuu , istrii kuu . sayangg dii harii girllfriendd inii kamuu tetapp semangattt yaaa sayangg dalamm menghadapii duniaa yangg jahattt inii yaaa , sayangg akuu banggaa samaa kamuu karnaa kamuu udahh bisaa ngelangkahh sampaii sejauhh inii bersamaa akuu makasihh yaa kamuu emangg wanitaa terhebatt kuu , sayangg jangann bersedihh lagii tersenyummmm lahh wanitaa terhebatt kuu , sepertii langitt dii soree harii yangg sayangg indahh dann maniss warnaa nyaaa yaaa sayangg , kalauu lagii capee ceritaa samaa akuu kalauu kamuu lagii sedihh ceritaa samaa akuu kapann punn yangg kamuu mauu akuu adaa lahh rumahh pulangg kamuu saatt sedihhh dann duniaa membuatt muu terlukaa dann capee akuu disinii siapp menungguu kamuu sayanhh bahuu kuu inii hanyaa untukk wanitaa kuu terhebatt yaa ituu angelinaa gresiaaa lebuann yangg sangatt cantikk , hebatt , dann tangguhhh 💪🏼💪🏼 , akuu percayaa nantii duniaa inii adaa akhirr nyaa dann kamuu akann bahagiaa bersamaaa kuu sampaii selamaa lamaa nyaaa yaaa sayangg , makasihh atass perjuangann kamuu selamaa inii untukk hidupp muu dann untukk hubungann kitaa yaa , makasihh sayangg kuu angelinaa gresiaa lebuann kuuu 💓💓💓 . sekalii lagii sekamatt harii girllfrienddd sayangg kuu , cintaa kuu , hasiann kuu , kesayangann kuu , istrii kuu , bidadarii kuu , malaikatt kecill kuu , yangg palingg istimewaaaa kuu 💝💝💝💝💝💝💝💝💝💝💝💝💝💝💝💝💝💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘
+      </p>
+    </div>
+
+    <div class="name-badge">
+      👑 Angelina Gresia Lebuan 👑
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT EFEK HUJAN EMOJI BONEKA, LOVE, BINTANG -->
+  <script>
+    const emojis = ['🧸', '💖', '⭐', '💕', '✨', '💓', '💗', '🐶', '💘', '🌸'];
+
+    function createFloatingEmoji() {
+      const emojiEl = document.createElement('div');
+      emojiEl.classList.add('floating-emoji');
+      
+      emojiEl.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+      emojiEl.style.left = Math.random() * 100 + 'vw';
+      
+      const size = Math.random() * 20 + 15;
+      emojiEl.style.fontSize = size + 'px';
+      
+      const duration = Math.random() * 4 + 3;
+      emojiEl.style.animationDuration = duration + 's';
+      
+      document.body.appendChild(emojiEl);
+      
+      setTimeout(() => {
+        emojiEl.remove();
+      }, duration * 1000);
+    }
+
+    setInterval(createFloatingEmoji, 300);
+  </script>
+</body>
+</html>
